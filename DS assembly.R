@@ -166,6 +166,15 @@ Beaufort1 <- APCO1 %>%
 Hyde1 <- APCO1 %>%
   subset(COUNTY.CODE == 95)
 
+## write county files to .csv
+write.csv(Onslow1, file = "./Data/Onslow.csv")
+write.csv(Jones1, file = "./Data/Jones.csv")
+write.csv(Careret1, file = "./Data/Careret.csv")
+write.csv(Craven1, file = "./Data/Craven.csv")
+write.csv(Pamlico1, file = "./Data/Pamlico.csv")
+write.csv(Beaufort1, file = "./Data/Beaufort.csv")
+write.csv(Hyde1, file = "./Data/Hyde.csv")
+
 ## Group county wide data by year then summarize
 
 onw1_CROP <- Onslow1 %>%
